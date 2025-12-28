@@ -11,7 +11,7 @@ from cinema.views import (
 )
 
 
-cinema_hal_list = CinemaHallViewSet.as_view(
+cinema_hall_list = CinemaHallViewSet.as_view(
     actions={"get": "list", "post": "create"}
 )
 
@@ -54,7 +54,7 @@ urlpatterns = [
 
     path(
         "cinema_halls/",
-        cinema_hal_list,
+        cinema_hall_list,
         name="cinema-list"
     ),
     path(
